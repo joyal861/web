@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Face Church</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <h1>HOLY FACE CHURCH</h1>
+                <P> Mothakkara.
+                   
+                </P>
+            </div>
+        </div>
+<!-- ----------------------------------about------------------ -->
+    </div>
+    <div id="about">
+        <div class="containar">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2022-09-27 at 8.27.25 PM.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>thjasgfjhg fghgsdjkgasdfjgfauk ghfhjgfhgfjhgf jgfg
+                        fyuaghjfjklhfjklhlhWLHFljhifhjsdf
+                        fdjuiyfgefhgjfdghdfh fhjgfhgfuhsdjc v jghueftyekjhfdsiufdf
+                        uidfuifhfjhdskjhkfsdhoifdghgfhfashk jhdfskjh jhdfkyef jhfufh
+                        fufuehj fdhufeykeoqf dfsh.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Vicar')">vicar</p>
+                        <p class="tab-links" onclick="opentab('family')">Family</p>
+                        <p class="tab-links" onclick="opentab('ward')">ward</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Vicar">
+                        <div class="tab-contents-col-1">
+                            <img src="images/WhatsApp Image 2022-10-19 at 8.50.08 PM.jpeg">
+
+                        </div>
+                        <ul>
+                            <li>Fr.Bivaldin</li>
+                            <li><span>Phone:</span>9999999999</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="family">
+                        <ul>
+                            <li><span>No of Family </span><br>90+</li>
+                            <li><span>No of People</span><br>300+</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="ward">
+                        <ul>
+                            <li><span>No of Wards</span><br>4</li>
+                            <li><span>Name</span><br><li>St.George</li><li>St.alphonsa</li><li>St Mary</li><li>St Joseph</li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+</body>
+</html>
